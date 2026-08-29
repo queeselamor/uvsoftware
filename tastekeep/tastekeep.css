@@ -81,7 +81,7 @@ a { color: inherit; text-decoration: none; cursor: pointer; }
 
 footer { padding: 65px clamp(24px, 6vw, 95px) 30px; color: var(--cream); background: var(--rust-dark); display: grid; grid-template-columns: 1fr minmax(240px, .45fr); gap: 60px; }
 .uv-link { display: flex; align-items: center; gap: 15px; }
-.uv-link span { width: 42px; height: 42px; display: grid; place-items: center; color: var(--ink); background: var(--cream); border-radius: 11px; font-size: 13px; font-weight: 800; }
+.uv-link img { width: 42px; height: 42px; display: block; object-fit: cover; border-radius: 11px; }
 .uv-link strong { font-size: 13px; letter-spacing: -.02em; }
 .footer-links { border-top: 1px solid var(--light-line); }
 .footer-links a { min-height: 47px; display: flex; align-items: center; justify-content: space-between; color: #e3c8b6; border-bottom: 1px solid var(--light-line); font: 600 9px/1 var(--mono); text-transform: uppercase; letter-spacing: .1em; }
