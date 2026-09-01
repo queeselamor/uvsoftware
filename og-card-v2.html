@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UV Software — TasteKeep App Store card</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap");
+      * { box-sizing: border-box; }
+      html, body { width: 1536px; height: 864px; margin: 0; overflow: hidden; }
+      body { font-family: "Inter", Arial, sans-serif; color: #0b0b0b; background: #f1eee6; }
+      .card { width: 100%; height: 100%; display: grid; grid-template-columns: 48% 52%; }
+      .copy { position: relative; padding: 62px 70px 54px; display: flex; flex-direction: column; }
+      .brand { display: flex; align-items: center; gap: 18px; font-size: 18px; font-weight: 850; letter-spacing: .17em; }
+      .brand img { width: 68px; height: 68px; border-radius: 18px; }
+      .eyebrow { margin: auto 0 24px; color: #aa3511; font-size: 15px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+      h1 { margin: 0; font-size: 86px; line-height: .86; letter-spacing: -.07em; text-transform: uppercase; }
+      h1 em { display: block; margin-top: 11px; color: #aa3511; font-style: normal; font-weight: 550; text-transform: none; letter-spacing: -.055em; }
+      .facts { display: flex; gap: 0; margin-top: 42px; border-top: 1px solid rgba(11,11,11,.28); border-bottom: 1px solid rgba(11,11,11,.28); }
+      .facts span { padding: 16px 23px 16px 0; margin-right: 23px; border-right: 1px solid rgba(11,11,11,.28); font-size: 12px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+      .facts span:last-child { border-right: 0; }
+      .visual { position: relative; overflow: hidden; color: #fff8e5; background: #aa3511; }
+      .visual::before { content: ""; position: absolute; inset: 34px; border: 1px solid rgba(255,248,229,.3); }
+      .status { position: absolute; z-index: 3; top: 54px; right: 54px; font-size: 13px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+      .phone { position: absolute; overflow: hidden; width: 282px; aspect-ratio: 1320 / 2868; border: 7px solid #ead9bf; border-radius: 36px; background: #fff8e5; box-shadow: 0 42px 90px rgba(55,14,2,.52); }
+      .phone img { width: 100%; height: 100%; object-fit: cover; }
+      .home { z-index: 2; top: 84px; left: 88px; transform: rotate(-5deg); }
+      .recipe { z-index: 1; right: 74px; bottom: -88px; transform: rotate(6deg); }
+      .app-lockup { position: absolute; z-index: 4; left: 54px; bottom: 44px; display: flex; align-items: center; gap: 18px; }
+      .app-lockup img { width: 70px; height: 70px; border-radius: 17px; box-shadow: 0 14px 28px rgba(55,14,2,.28); }
+      .app-lockup strong { display: block; font-size: 26px; letter-spacing: -.04em; }
+      .app-lockup span { display: block; margin-top: 5px; font-size: 11px; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <section class="copy">
+        <div class="brand"><img src="uv-software.png" alt="">SOFTWARE</div>
+        <p class="eyebrow">Now on the App Store</p>
+        <h1>Your recipes.<em>Together at last.</em></h1>
+        <div class="facts"><span>Works offline</span><span>No account</span><span>No ads</span></div>
+      </section>
+      <section class="visual">
+        <p class="status">iOS available · Android soon</p>
+        <figure class="phone home"><img src="tastekeep-home.webp" alt=""></figure>
+        <figure class="phone recipe"><img src="tastekeep-recipe.webp" alt=""></figure>
+        <div class="app-lockup"><img src="tastekeep-icon.png" alt=""><div><strong>TasteKeep</strong><span>Your private recipe notebook</span></div></div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -55,6 +55,9 @@ a { color: inherit; text-decoration: none; cursor: pointer; }
 .hero-copy h1 em { display: block; color: var(--focus); font-style: normal; font-weight: 500; letter-spacing: -.066em; text-transform: none; }
 .hero-intro { max-width: 870px; display: grid; grid-template-columns: 1fr auto; gap: 70px; align-items: end; margin: 62px 0 78px 8vw; }
 .hero-intro p { margin: 0; font-size: clamp(18px, 1.55vw, 23px); line-height: 1.55; }
+.hero-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 11px; }
+.hero-actions > span { color: var(--muted); font-size: 10px; font-weight: 650; text-transform: uppercase; letter-spacing: .1em; }
+.hero-store { min-width: 262px; }
 
 .hero-showcase { position: relative; min-height: 600px; overflow: hidden; color: var(--white); background: var(--ink); }
 .showcase-grid { position: absolute; inset: 0; background-image: linear-gradient(to right, transparent calc(33.333% - .5px), var(--line-light) 33.333%, transparent calc(33.333% + .5px)), linear-gradient(to right, transparent calc(66.666% - .5px), var(--line-light) 66.666%, transparent calc(66.666% + .5px)); }
@@ -78,6 +81,7 @@ a { color: inherit; text-decoration: none; cursor: pointer; }
 .app-meta { width: 100%; display: flex; justify-content: space-between; gap: 22px; margin-bottom: 56px; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; }
 .status { display: inline-flex; align-items: center; gap: 8px; }
 .status i { width: 7px; height: 7px; background: var(--taste); border-radius: 50%; }
+.status.available i { background: #347541; box-shadow: 0 0 0 4px rgba(52, 117, 65, .12); }
 .app-lockup { display: flex; align-items: center; gap: 20px; margin-bottom: 48px; }
 .app-lockup img { flex: 0 0 auto; border-radius: 21px; box-shadow: 0 16px 34px rgba(55, 18, 7, .22); }
 .app-lockup p { margin: 0 0 6px; font-size: 24px; font-weight: 850; letter-spacing: -.045em; }
@@ -90,10 +94,12 @@ a { color: inherit; text-decoration: none; cursor: pointer; }
 .app-features li > span { display: grid; grid-template-columns: 145px 1fr; gap: 14px; align-items: baseline; }
 .app-features strong { font-size: 13px; }
 .app-features small { color: #79584d; font-size: 12px; line-height: 1.4; }
-.app-actions { width: 100%; display: flex; align-items: center; gap: 24px; margin-top: auto; }
+.app-actions { width: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 22px; margin-top: auto; }
 .button { min-width: 226px; min-height: 54px; display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 0 18px; color: var(--taste-paper); background: var(--taste); border: 1px solid var(--taste); border-radius: 12px; font-size: 10px; font-weight: 750; text-transform: uppercase; letter-spacing: .1em; transition: color 200ms ease, background 200ms ease; }
 .button:hover { color: var(--taste); background: transparent; }
-.app-actions > span { max-width: 190px; color: #79584d; font-size: 11px; line-height: 1.4; }
+.secondary-action { min-height: 44px; display: inline-flex; align-items: center; gap: 13px; color: #67483e; border-bottom: 1px solid rgba(43, 21, 14, .35); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; transition: color 200ms ease, border-color 200ms ease; }
+.secondary-action:hover { color: var(--taste); border-color: var(--taste); }
+.app-actions > span { flex-basis: 100%; color: #79584d; font-size: 11px; line-height: 1.4; }
 
 .app-visual { position: relative; min-width: 0; overflow: hidden; background: var(--taste); }
 .visual-outline { position: absolute; inset: 34px; border: 1px solid rgba(255, 248, 229, .28); }
@@ -163,6 +169,8 @@ footer { padding: 72px clamp(20px, 5vw, 80px) 34px; display: grid; grid-template
   .hero-copy h1 { margin-top: 46px; font-size: clamp(56px, 16.8vw, 86px); line-height: .82; }
   .hero-intro { display: block; margin: 42px 0 54px; }
   .hero-intro p { margin-bottom: 27px; font-size: 18px; }
+  .hero-actions { width: 100%; }
+  .hero-store { width: 100%; }
   .hero-showcase { min-height: 490px; }
   .showcase-grid { background-image: linear-gradient(to right, transparent calc(50% - .5px), var(--line-light) 50%, transparent calc(50% + .5px)); }
   .showcase-top { top: 18px; left: 17px; right: 17px; font-size: 8px; }
@@ -184,7 +192,8 @@ footer { padding: 72px clamp(20px, 5vw, 80px) 34px; display: grid; grid-template
   .app-description { margin-top: 34px; font-size: 16px; }
   .app-features li > span { grid-template-columns: 1fr; gap: 4px; }
   .app-actions { align-items: flex-start; flex-direction: column; }
-  .app-actions > span { max-width: none; }
+  .app-actions .button { width: 100%; }
+  .app-actions > span { width: 100%; max-width: none; flex-basis: auto; }
   .app-visual { min-height: 650px; }
   .visual-outline { inset: 18px; }
   .product-phone { width: 46%; border-width: 5px; border-radius: 23px; }
