@@ -1,12 +1,11 @@
 # UV Software
 
-Static GitHub Pages website for the independent UV Software portfolio.
+Static GitHub Pages website for UV Software, an independent mobile app studio.
 
 ## Structure
 
-- `/` — UV Software portfolio and product-family overview
-- `/arcade/index.html` — UV Arcade, Grand Bricks, and Trashfall
-- `/tastekeep/index.html` — TasteKeep product landing page
+- `/` — one-page UV Software website and app catalog
+- TasteKeep is the current featured app
 
 The public support and privacy page for TasteKeep remains at
 `https://queeselamor.github.io/tastekeep-support/`.
