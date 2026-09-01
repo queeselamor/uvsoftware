@@ -55,8 +55,8 @@ a { color: inherit; text-decoration: none; cursor: pointer; }
 .hero-copy h1 em { display: block; color: var(--focus); font-style: normal; font-weight: 500; letter-spacing: -.066em; text-transform: none; }
 .hero-intro { max-width: 870px; display: grid; grid-template-columns: 1fr auto; gap: 70px; align-items: end; margin: 62px 0 78px 8vw; }
 .hero-intro p { margin: 0; font-size: clamp(18px, 1.55vw, 23px); line-height: 1.55; }
-.hero-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 11px; }
-.hero-actions > span { color: var(--muted); font-size: 10px; font-weight: 650; text-transform: uppercase; letter-spacing: .1em; }
+.hero-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+.hero-actions > span { padding-left: 2px; color: var(--muted); font-size: 10px; font-weight: 650; line-height: 1.45; text-transform: uppercase; letter-spacing: .1em; }
 .hero-store { min-width: 262px; }
 
 .hero-showcase { position: relative; min-height: 600px; overflow: hidden; color: var(--white); background: var(--ink); }
@@ -95,11 +95,11 @@ a { color: inherit; text-decoration: none; cursor: pointer; }
 .app-features strong { font-size: 13px; }
 .app-features small { color: #79584d; font-size: 12px; line-height: 1.4; }
 .app-actions { width: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 22px; margin-top: auto; }
-.button { min-width: 226px; min-height: 54px; display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 0 18px; color: var(--taste-paper); background: var(--taste); border: 1px solid var(--taste); border-radius: 12px; font-size: 10px; font-weight: 750; text-transform: uppercase; letter-spacing: .1em; transition: color 200ms ease, background 200ms ease; }
+.button { min-width: 226px; min-height: 54px; display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 0 18px; color: var(--taste-paper); background: var(--taste); border: 1px solid var(--taste); border-radius: 12px; font-size: 10px; font-weight: 750; white-space: nowrap; text-transform: uppercase; letter-spacing: .1em; transition: color 200ms ease, background 200ms ease; }
 .button:hover { color: var(--taste); background: transparent; }
-.secondary-action { min-height: 44px; display: inline-flex; align-items: center; gap: 13px; color: #67483e; border-bottom: 1px solid rgba(43, 21, 14, .35); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; transition: color 200ms ease, border-color 200ms ease; }
+.secondary-action { min-height: 44px; display: inline-flex; align-items: center; gap: 13px; color: #67483e; border-bottom: 1px solid rgba(43, 21, 14, .35); font-size: 10px; font-weight: 700; white-space: nowrap; text-transform: uppercase; letter-spacing: .09em; transition: color 200ms ease, border-color 200ms ease; }
 .secondary-action:hover { color: var(--taste); border-color: var(--taste); }
-.app-actions > span { flex-basis: 100%; color: #79584d; font-size: 11px; line-height: 1.4; }
+.app-actions > span { flex: 0 0 100%; padding-top: 2px; color: #79584d; font-size: 11px; line-height: 1.45; }
 
 .app-visual { position: relative; min-width: 0; overflow: hidden; background: var(--taste); }
 .visual-outline { position: absolute; inset: 34px; border: 1px solid rgba(255, 248, 229, .28); }
